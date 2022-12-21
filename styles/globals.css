@@ -1,26 +1,23 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@font-face {
+    font-family: "aeonik";
+    src: url("../public/fonts/Aeonik/AeonikProTRIAL-Regular.otf");
   }
-  body {
-    color: white;
-    background: black;
+  * {
+    cursor: none;
   }
-}
+
+  .cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #078080;
+    mix-blend-mode: difference;
+background-color: white;
+  }
