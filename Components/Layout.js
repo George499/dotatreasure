@@ -1,9 +1,11 @@
 import Head from "next/head";
+import Header from "./Header";
 
 const Layout = ({ children }) => {
   return (
     <>
-      <div className="bg-[#FC4445] h-screen w-full z-10">{children}</div>
+      <Header />
+      <div className="bg-[#232946] h-screen w-full z-10">{children}</div>
     </>
   );
 };

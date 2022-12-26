@@ -3,7 +3,7 @@ import { useState, createContext } from "react";
 export const Context = createContext();
 
 export const ContextProvider = (props) => {
-  const [username, setUsername] = useState("");
+  const [username, setUsername] = useState("a");
   const [secret, setSecret] = useState("");
 
   const value = {
