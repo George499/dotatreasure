@@ -7,6 +7,7 @@ function Cursor() {
   const springConfig = { damping: 25, stiffness: 900 };
   const cursorXSpring = useSpring(cursorX, springConfig);
   const cursorYSpring = useSpring(cursorY, springConfig);
+
   useEffect(() => {
     const moveCursor = (e) => {
       cursorX.set(e.clientX - 16);
